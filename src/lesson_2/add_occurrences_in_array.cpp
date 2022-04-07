@@ -1,6 +1,22 @@
-#include "problem_23.h"
-#include "utils.h"
+#include <string.h>
+#include <cstdlib>
+#include <vector>
+#include <climits>
+#include <cstdint>
+#include <iostream>
+#include <cmath>
+#include <array>
 #include <algorithm>
+
+using namespace std;
+
+void print_1d(vector<int> v)
+{
+	for (int i = 0; i < v.size(); i++) {
+		cout << v[i] << " ";
+	}
+	cout << endl;
+}
 
 int odd_occurrences(vector<int> &A)
 {
@@ -23,6 +39,8 @@ int main(int argc, char* argv[])
 
     index = odd_occurrences(odd);
 
+    cout << "Input: ";
+    print_1d(odd);
     cout << "Result: " << index << endl;
 
     return 0;

@@ -34,7 +34,8 @@ int main(int argc, char* argv[])
     memset(binary, -1, size);
     get_binary(n, binary, size);
 
-    cout << n << endl;
+    cout << "Input : " << n << endl;
+    cout << "Binary: ";
     for (int i = 0; i < size; i++) {
         cout << binary[i] << " ";
     }
